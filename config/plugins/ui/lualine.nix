@@ -8,7 +8,7 @@
 
     # Load our extensions
     extensions = [
-      "nvim-tree"
+      "neo-tree"
     ];
 
     # Icons for our separators
