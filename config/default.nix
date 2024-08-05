@@ -32,6 +32,7 @@
     ./plugins/git/lazygit.nix
 
     # Utils
+    ./plugins/utils/markdown-preview.nix
     ./plugins/utils/telescope.nix
     ./plugins/utils/whichkey.nix
   ];
