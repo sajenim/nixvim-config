@@ -35,4 +35,4 @@ nix run git+https://git.sajenim.dev/jasmine/nvim.nix.git
 
 ## References
 * [dc-tec/nixvim](https://github.com/dc-tec/nixvim)
-
+* [elythh/nixvim](https://github.com/elythh/nixvim)
