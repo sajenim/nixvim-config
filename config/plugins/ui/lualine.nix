@@ -16,7 +16,11 @@
     sectionSeparators = { left = ""; right = ""; };
 
     # Display components in tabline
-    tabline.lualine_a = [ { name = "buffers"; } ];
+    tabline = {
+      lualine_a = [ { name = "buffers"; } ];
+      lualine_x = [ { name = "hostname"; } ];
+      lualine_z = [ { name = "encoding"; } ];
+    };
 
     # Lualine has sections as shown below
     # +-------------------------------------------------+
@@ -24,7 +28,7 @@
     # +-------------------------------------------------+
     sections = {
       # Section A
-      lualine_a = [ { name = "mode"; icon = ""; } ];
+      lualine_a = [ { name = "mode"; } ];
 
       # Section B
       lualine_b = [
@@ -34,34 +38,30 @@
         # Git diff status
         { name = "diff";
           extraConfig.symbols = {
-            added = " ";
-            modified = " ";
-            removed = " ";
-          };
-        }
-
-        # Diagnostic count from nvim_lsp
-        { name = "diagnostics";
-          extraConfig = {
-            sources = [ "nvim_lsp" ];
-            symbols = {
-              error = " ";
-              warn = " ";
-              info = " ";
-              hint = "󰝶 ";
-            };
+            added = "+";
+            modified = "~";
+            removed = "-";
           };
         }
       ];
 
       # Section C
-      lualine_c = [ { name = "filename"; extraConfig = { path = 1; }; } ];
+      lualine_c = [ { name = "filename"; } ];
 
       # Section X
       lualine_x = [
-        { name = "encoding"; }
-        { name = "fileformat"; }
-        { name = "filetype"; }
+        # Diagnostic count from nvim_lsp
+        { name = "diagnostics";
+          extraConfig = {
+            sources = [ "nvim_lsp" ];
+            symbols = {
+              error = "error:";
+              warn = "warning:";
+              info = "info:";
+              hint = "hint:";
+            };
+          };
+        }
       ];
 
       # Section Y
