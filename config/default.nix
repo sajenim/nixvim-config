@@ -28,6 +28,7 @@
     ./plugins/lsp/lsp.nix
 
     # Git
+    ./plugins/git/fugitive.nix
     ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix
 
