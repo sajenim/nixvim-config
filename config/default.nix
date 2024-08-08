@@ -25,6 +25,7 @@
     ./plugins/ui/lualine.nix
 
     # LSP and formatting
+    ./plugins/lsp/conform.nix
     ./plugins/lsp/lsp.nix
 
     # Git
