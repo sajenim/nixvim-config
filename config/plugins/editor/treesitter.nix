@@ -1,13 +1,11 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   # Tree-sitter is a parser generator tool and an incremental parsing library.
   plugins.treesitter = {
     enable = true;
 
     # Options provided to the require('nvim-treesitter.configs').setup function.
     settings = {
-      highlight = { 
+      highlight = {
         enable = true; # Enable syntax highlighing.
       };
       indent = {
@@ -21,4 +19,3 @@
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };
 }
-

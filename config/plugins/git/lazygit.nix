@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   plugins.lazygit = {
     enable = true;
   };
@@ -29,4 +27,3 @@
     require("telescope").load_extension("lazygit")
   '';
 }
-

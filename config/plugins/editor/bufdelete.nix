@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   plugins.bufdelete = {
     enable = true;
   };
@@ -20,4 +18,3 @@
     }
   ];
 }
-

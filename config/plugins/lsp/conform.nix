@@ -1,6 +1,4 @@
-{pkgs, ...}: 
-
-{
+{pkgs, ...}: {
   plugins.conform-nvim = {
     enable = true;
 
@@ -18,7 +16,7 @@
       nix = ["alejandra"];
     };
   };
-  
+
   # Install our formatters.
   extraPackages = with pkgs; [
     alejandra

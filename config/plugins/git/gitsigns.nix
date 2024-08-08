@@ -1,13 +1,11 @@
-{ ... }:
-
-{
+{...}: {
   plugins.gitsigns = {
     enable = true;
   };
 
   keymaps = [
     {
-      mode = [ "n" "v" ];
+      mode = ["n" "v"];
       key = "<leader>hs";
       action = "<cmd>Gitsigns stage_hunk<cr>";
       options = {
@@ -17,7 +15,7 @@
     }
 
     {
-      mode = [ "n" "v" ];
+      mode = ["n" "v"];
       key = "<leader>hr";
       action = "<cmd>Gitsigns reset_hunk<cr>";
       options = {
@@ -107,4 +105,3 @@
     }
   ];
 }
-

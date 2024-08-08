@@ -1,8 +1,6 @@
-{ ... }:
-
-{
+{...}: {
   imports = [
-    ./neoclip.nix           # Persistent clipboard.
+    ./neoclip.nix # Persistent clipboard.
     ./software-licenses.nix # View common software licenses.
   ];
 
@@ -99,4 +97,3 @@
     };
   };
 }
-

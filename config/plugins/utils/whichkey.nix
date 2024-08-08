@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   plugins.which-key = {
     enable = true;
   };
@@ -53,7 +51,7 @@
     }
 
     {
-      mode = [ "n" "v" ];
+      mode = ["n" "v"];
       key = "<leader>c";
       action = "<Nop>";
       options = {
@@ -80,4 +78,3 @@
     }
   ];
 }
-

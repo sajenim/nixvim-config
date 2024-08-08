@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   imports = [
     # General configuration.
     ./keymaps.nix
@@ -39,4 +37,3 @@
     ./plugins/utils/whichkey.nix
   ];
 }
-

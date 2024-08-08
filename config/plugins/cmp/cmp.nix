@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   # Autocompletion plugin
   plugins.cmp = {
     enable = true;
@@ -8,8 +6,8 @@
     settings = {
       # The sources to use
       sources = [
-        { name = "nvim_lsp"; }  # LSP source for cmp
-        { name = "luasnip"; }   # Snippets source for cmp
+        {name = "nvim_lsp";} # LSP source for cmp
+        {name = "luasnip";} # Snippets source for cmp
       ];
       # The snippet expansion function.
       snippet.expand = ''
@@ -35,4 +33,3 @@
     autoEnableSources = true;
   };
 }
-

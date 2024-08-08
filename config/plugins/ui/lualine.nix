@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   plugins.lualine = {
     enable = true;
     globalstatus = true;
@@ -12,14 +10,20 @@
     ];
 
     # Icons for our separators
-    componentSeparators = { left = ""; right = ""; };
-    sectionSeparators = { left = ""; right = ""; };
+    componentSeparators = {
+      left = "";
+      right = "";
+    };
+    sectionSeparators = {
+      left = "";
+      right = "";
+    };
 
     # Display components in tabline
     tabline = {
-      lualine_a = [ { name = "buffers"; } ];
-      lualine_x = [ { name = "hostname"; } ];
-      lualine_z = [ { name = "encoding"; } ];
+      lualine_a = [{name = "buffers";}];
+      lualine_x = [{name = "hostname";}];
+      lualine_z = [{name = "encoding";}];
     };
 
     # Lualine has sections as shown below
@@ -28,15 +32,19 @@
     # +-------------------------------------------------+
     sections = {
       # Section A
-      lualine_a = [ { name = "mode"; } ];
+      lualine_a = [{name = "mode";}];
 
       # Section B
       lualine_b = [
         # Git branch
-        { name = "branch"; icon = ""; }
+        {
+          name = "branch";
+          icon = "";
+        }
 
         # Git diff status
-        { name = "diff";
+        {
+          name = "diff";
           extraConfig.symbols = {
             added = "+";
             modified = "~";
@@ -46,14 +54,15 @@
       ];
 
       # Section C
-      lualine_c = [ { name = "filename"; } ];
+      lualine_c = [{name = "filename";}];
 
       # Section X
       lualine_x = [
         # Diagnostic count from nvim_lsp
-        { name = "diagnostics";
+        {
+          name = "diagnostics";
           extraConfig = {
-            sources = [ "nvim_lsp" ];
+            sources = ["nvim_lsp"];
             symbols = {
               error = "error:";
               warn = "warning:";
@@ -65,11 +74,10 @@
       ];
 
       # Section Y
-      lualine_y = [ { name = "progress"; } ];
+      lualine_y = [{name = "progress";}];
 
       # Section Z
-      lualine_z = [ { name = "location"; } ];
+      lualine_z = [{name = "location";}];
     };
   };
 }
-
