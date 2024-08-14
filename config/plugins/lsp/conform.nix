@@ -14,21 +14,13 @@
     formattersByFt = {
       c = ["clang-format"];
       nix = ["alejandra"];
+      haskell = ["stylish-haskell"];
     };
   };
 
   # Install our formatters.
   extraPackages = with pkgs; [
     alejandra
+    stylish-haskell
   ];
-
-  extraConfigLua = "require('conform').setup({
-    format_on_save = function(bufnr)
-      -- Disable autoformat on certain filetypes
-      local ignore_filetypes = { 'haskell', }
-      if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
-        return
-      end
-    end,
-  })";
 }
