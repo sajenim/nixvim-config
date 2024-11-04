@@ -14,7 +14,6 @@
     formattersByFt = {
       c = ["clang-format"];
       nix = ["alejandra"];
-      haskell = ["stylish-haskell"];
     };
   };
 
