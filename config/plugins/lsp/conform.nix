@@ -13,6 +13,8 @@
     # Map of filetype to formatters.
     formattersByFt = {
       c = ["clang-format"];
+      haskell = ["stylish-haskell"];
+      lua = ["stylua"];
       nix = ["alejandra"];
     };
   };
