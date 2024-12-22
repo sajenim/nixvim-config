@@ -18,16 +18,15 @@
       '';
       # cmp mappings declaration
       mapping = {
-        # Select next/previous item.
-        "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-        "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-        # Scroll through documentation.
-        "<C-s>" = "cmp.mapping.scroll_docs(-4)";
-        "<C-t>" = "cmp.mapping.scroll_docs(4)";
-        # Confirm selection.
-        "<CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
-        # Exit completion.
-        "<C-e>" = "cmp.mapping.abort()";
+        "<C-Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+        "<C-e>" = "cmp.mapping.select_next_item()";
+        "<C-o>" = "cmp.mapping.select_prev_item()";
+        "<C-esc>" = "cmp.mapping.abort()";
+        "<C-b>" = "cmp.mapping.scroll_docs(-4)";
+        "<C-f>" = "cmp.mapping.scroll_docs(4)";
+        "<C-Space>" = "cmp.mapping.complete()";
+        "<C-CR>" = "cmp.mapping.confirm({ select = true })";
+        "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
       };
     };
     # Scans the sources array and enable the corresponding plugins if they are known to nixvim.
