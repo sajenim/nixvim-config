@@ -2,20 +2,23 @@
   plugins.conform-nvim = {
     enable = true;
 
-    # Run the formatter on file save.
-    formatOnSave = {
-      lspFallback = true;
-      timeoutMs = 500;
-    };
-    # Receive notificaton when a formatter errors.
-    notifyOnError = true;
+    settings = {
+      # Run the formatter on file save.
+      format_on_save = {
+        lspFallback = true;
+        timeoutMs = 500;
+      };
 
-    # Map of filetype to formatters.
-    formattersByFt = {
-      c = ["clang-format"];
-      haskell = ["stylish-haskell"];
-      lua = ["stylua"];
-      nix = ["alejandra"];
+      # Map of filetype to formatters.
+      formattersByFt = {
+        c = ["clang-format"];
+        haskell = ["stylish-haskell"];
+        lua = ["stylua"];
+        nix = ["alejandra"];
+      };
+
+      # Receive notificaton when a formatter errors.
+      notifyOnError = true;
     };
   };
 

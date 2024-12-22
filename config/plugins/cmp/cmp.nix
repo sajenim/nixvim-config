@@ -20,7 +20,7 @@
       mapping = {
         "<C-Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
         "<C-e>" = "cmp.mapping.select_next_item()";
-        "<C-o>" = "cmp.mapping.select_prev_item()";
+        "<C-n>" = "cmp.mapping.select_prev_item()";
         "<C-esc>" = "cmp.mapping.abort()";
         "<C-b>" = "cmp.mapping.scroll_docs(-4)";
         "<C-f>" = "cmp.mapping.scroll_docs(4)";

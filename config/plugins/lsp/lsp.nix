@@ -9,19 +9,20 @@
         enable = true;
       };
       # Clojure
-      clojure-lsp = {
+      clojure_lsp = {
         enable = true;
       };
       # Haskell
       hls = {
         enable = true;
+        installGhc = true;
       };
       # Lua
-      lua-ls = {
+      lua_ls = {
         enable = true;
       };
       # Nix
-      nil-ls = {
+      nil_ls = {
         enable = true;
       };
       # YAML
