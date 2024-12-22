@@ -22,6 +22,8 @@
   # Install our formatters.
   extraPackages = with pkgs; [
     alejandra
+    clang-tools
     stylish-haskell
+    stylua
   ];
 }
