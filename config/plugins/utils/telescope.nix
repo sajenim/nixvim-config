@@ -18,10 +18,10 @@
     # Configure our telescope keymaps.
     keymaps = {
       # File Pickers
-      "<leader>ff" = {
+      "<leader>sf" = {
         action = "find_files";
         options = {
-          desc = "Find project files";
+          desc = "Search project files";
         };
       };
       "<leader>/" = {
@@ -32,10 +32,10 @@
       };
 
       # Vim Pickers
-      "<leader>fb" = {
+      "<leader>sb" = {
         action = "buffers";
         options = {
-          desc = "Find open buffers";
+          desc = "Search open buffers";
         };
       };
       "<leader>:" = {
