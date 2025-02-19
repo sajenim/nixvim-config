@@ -18,7 +18,6 @@
       # Map of filetype to formatters.
       formatters_by_ft = {
         c = ["clang-format"];
-        haskell = ["stylish-haskell"];
         lua = ["stylua"];
         nix = ["alejandra"];
       };
@@ -30,9 +29,6 @@
         };
         clang-format = {
           command = lib.getExe' pkgs.clang-tools "clang-format";
-        };
-        stylish-haskell = {
-          command = lib.getExe pkgs.stylish-haskell;
         };
         stylua = {
           command = lib.getExe pkgs.stylua;
