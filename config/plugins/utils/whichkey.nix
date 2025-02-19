@@ -7,15 +7,6 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>f";
-      action = "<Nop>";
-      options = {
-        desc = "+find/files";
-      };
-    }
-
-    {
-      mode = "n";
       key = "<leader>s";
       action = "<Nop>";
       options = {
