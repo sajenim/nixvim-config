@@ -7,14 +7,6 @@
     enable = true;
 
     settings = {
-      # Run the formatter on file save.
-      format_on_save = {
-        lspFallback = true;
-        timeoutMs = 500;
-      };
-      # Receive notificaton when a formatter errors.
-      notifyOnError = true;
-
       # Map of filetype to formatters.
       formatters_by_ft = {
         c = ["clang-format"];
@@ -34,6 +26,25 @@
           command = lib.getExe pkgs.stylua;
         };
       };
+
+      # Receive notificaton when a formatter errors.
+      notifyOnError = true;
     };
   };
+
+  # Keymaps for conform.nvim
+  keymaps = [
+    {
+      mode = "";
+      key = "<leader>f";
+      action.__raw = ''
+        function()
+          require('conform').format { async = true, lsp_fallback = true }
+        end
+      '';
+      options = {
+        desc = "Format buffer";
+      };
+    }
+  ];
 }
