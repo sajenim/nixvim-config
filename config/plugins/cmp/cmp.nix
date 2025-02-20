@@ -11,17 +11,36 @@
         {name = "path";} # Filesystem paths
       ];
       # The snippet expansion function.
-      snippet.expand = ''
-        function(args)
-          require('luasnip').lsp_expand(args.body)
-        end
-      '';
+      snippet.expand =
+        #Lua
+        ''
+          function(args)
+            require('luasnip').lsp_expand(args.body)
+          end
+        '';
       # cmp mappings declaration
       mapping = {
-        "<C-down>" = "cmp.mapping.select_next_item()";
-        "<C-up>" = "cmp.mapping.select_prev_item()";
-        "<C-esc>" = "cmp.mapping.abort()";
-        "<C-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
+        "<C-s>" =
+          # Lua
+          "cmp.mapping.scroll_docs(-4)";
+        "<C-t>" =
+          # Lua
+          "cmp.mapping.scroll_docs(4)";
+        "<C-Space>" =
+          # Lua
+          "cmp.mapping.complete()";
+        "<C-esc>" =
+          # Lua
+          "cmp.mapping.close()";
+        "<Tab>" =
+          # Lua
+          "cmp.mapping(cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+        "<S-Tab>" =
+          # Lua
+          "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
+        "<CR>" =
+          # Lua
+          "cmp.mapping.confirm({ select = false, behavior = cmp.ConfirmBehavior.Replace })";
       };
     };
     # Scans the sources array and enable the corresponding plugins if they are known to nixvim.
