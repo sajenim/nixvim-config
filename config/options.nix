@@ -2,6 +2,7 @@
   config.opts = {
     # General
     number = true; # Display line numbers.
+    relativenumber = true; # Enable relative line numbers
     showmode = false; # Do not show the mode we're editing in.
     swapfile = false; # Disable vim swapfile.
     clipboard = "unnamedplus"; # Use the clipboard for all operations.
