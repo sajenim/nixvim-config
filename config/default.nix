@@ -9,6 +9,7 @@
 
     # Completion
     ./plugins/cmp/cmp.nix
+    ./plugins/cmp/copilot.nix
 
     # Snippets
     ./plugins/snippets/luasnip.nix
@@ -33,7 +34,6 @@
     ./plugins/git/lazygit.nix
 
     # Utils
-    ./plugins/utils/codecompanion.nix
     ./plugins/utils/markdown-preview.nix
     ./plugins/utils/telescope.nix
     ./plugins/utils/whichkey.nix
