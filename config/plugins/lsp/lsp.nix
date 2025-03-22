@@ -29,6 +29,10 @@
       yamlls = {
         enable = true;
       };
+      # Python
+      pyright = {
+        enable = true;
+      };
     };
 
     keymaps = {
