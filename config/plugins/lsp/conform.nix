@@ -9,9 +9,19 @@
     settings = {
       # Map of filetype to formatters.
       formatters_by_ft = {
-        c = ["clang-format"];
-        lua = ["stylua"];
-        nix = ["alejandra"];
+        c = [
+          "clang-format"
+        ];
+        lua = [
+          "stylua"
+        ];
+        nix = [
+          "alejandra"
+        ];
+        python = [
+          "isort"
+          "black"
+        ];
       };
 
       # Install our formatters
@@ -24,6 +34,12 @@
         };
         stylua = {
           command = lib.getExe pkgs.stylua;
+        };
+        isort = {
+          command = lib.getExe pkgs.isort;
+        };
+        black = {
+          command = lib.getExe pkgs.black;
         };
       };
 
