@@ -2,23 +2,30 @@
   # Autocompletion plugin
   plugins.cmp = {
     enable = true;
+    autoEnableSources = true;
+
     # Options provided to the require('cmp').setup function.
     settings = {
       # The sources to use
       sources = [
-        {name = "nvim_lsp";} # LSP source for cmp
-        {name = "luasnip";} # Snippets source for cmp
-        {name = "path";} # Filesystem paths
+        { # Language Server Protocol
+          name = "nvim_lsp";
+        }      
+
+        { # Buffer Words
+          name = "buffer";
+        }       
+
+        { # Filesystem paths
+          name = "path";
+        }        
+
+        { # Command line
+          name = "cmdline";
+        }      
       ];
-      # The snippet expansion function.
-      snippet.expand =
-        #Lua
-        ''
-          function(args)
-            require('luasnip').lsp_expand(args.body)
-          end
-        '';
-      # cmp mappings declaration
+
+      # Key mappings for the completion menu.
       mapping = {
         "<esc>" =
           # Lua
@@ -34,7 +41,5 @@
           "cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Replace })";
       };
     };
-    # Scans the sources array and enable the corresponding plugins if they are known to nixvim.
-    autoEnableSources = true;
   };
 }
