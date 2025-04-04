@@ -18,11 +18,11 @@
 
         { # Filesystem paths
           name = "path";
-        }        
+        }
 
-        { # Command line
-          name = "cmdline";
-        }      
+        { # Markdown
+          name = "render_markdown";
+        }
       ];
 
       # Key mappings for the completion menu.

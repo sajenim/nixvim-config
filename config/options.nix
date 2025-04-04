@@ -6,6 +6,7 @@
     showmode = false; # Do not show the mode we're editing in.
     swapfile = false; # Disable vim swapfile.
     clipboard = "unnamedplus"; # Use the clipboard for all operations.
+    conceallevel = 1; # Show concealed characters (like markdown).
 
     # Tabs & Spaces
     tabstop = 2; # Set the width of a tab character.

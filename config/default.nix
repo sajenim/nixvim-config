@@ -11,17 +11,14 @@
     ./plugins/cmp/cmp.nix
     ./plugins/cmp/copilot.nix
 
-    # Snippets
-    ./plugins/snippets/luasnip.nix
-
     # Editor plugins and configurations
     ./plugins/editor/bufdelete.nix
     ./plugins/editor/comment.nix
-    ./plugins/editor/neo-tree.nix
     ./plugins/editor/treesitter.nix
 
     # UI plugins
     ./plugins/ui/lualine.nix
+    ./plugins/ui/neo-tree.nix
     ./plugins/ui/web-devicons.nix
 
     # LSP and formatting
@@ -35,7 +32,10 @@
 
     # Utils
     ./plugins/utils/markdown-preview.nix
+    ./plugins/utils/obsidian.nix
+    ./plugins/utils/render-markdown.nix
     ./plugins/utils/telescope.nix
+    ./plugins/utils/todo-comments.nix
     ./plugins/utils/whichkey.nix
   ];
 }
