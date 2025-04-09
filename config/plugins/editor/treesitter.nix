@@ -18,4 +18,12 @@
     # Install all grammar packages.
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };
+
+  plugins.treesitter-refactor = {
+    enable = true;
+
+    highlightDefinitions = {
+      enable = true;
+    };
+  };
 }
