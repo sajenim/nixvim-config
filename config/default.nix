@@ -12,6 +12,7 @@
     ./plugins/cmp/copilot.nix
 
     # Editor plugins and configurations
+    ./plugins/editor/autopairs.nix
     ./plugins/editor/bufdelete.nix
     ./plugins/editor/comment.nix
     ./plugins/editor/treesitter.nix
