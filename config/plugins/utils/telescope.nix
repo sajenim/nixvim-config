@@ -1,6 +1,5 @@
 {...}: {
   imports = [
-    ./neoclip.nix # Persistent clipboard.
     ./software-licenses.nix # View common software licenses.
   ];
 
@@ -84,10 +83,6 @@
       };
 
       # Extensions
-      "<leader>p" = {
-        action = "neoclip";
-        options.desc = "Persistent Clipboard";
-      };
       "<leader>sl" = {
         action = "software-licenses find";
         options = {
