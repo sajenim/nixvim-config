@@ -25,5 +25,20 @@
     highlightDefinitions = {
       enable = true;
     };
+
+    navigation = {
+      enable = true;
+      keymaps = {
+        gotoNextUsage = "<leader>n";
+        gotoPreviousUsage = "<leader>N";
+      };
+    };
+
+    smartRename = {
+      enable = true;
+      keymaps = {
+        smartRename = "<leader>r";
+      };
+    };
   };
 }
