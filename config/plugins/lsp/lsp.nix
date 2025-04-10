@@ -40,9 +40,9 @@
       silent = true;
       # Configure keymaps for our diagnostics.
       diagnostic = {
-        "<leader>n" = "open_float"; # Show diagnostics in floating window.
-        "<leader>o" = "goto_prev"; # Jump to previous diagnostic.
-        "<leader>e" = "goto_next"; # Jump to next diagnostic.
+        "<C-W>d" = "open_float"; # Show diagnostics in floating window.
+        "[d" = "goto_prev"; # Jump to previous diagnostic.
+        "]d" = "goto_next"; # Jump to next diagnostic.
       };
       # Configure keymaps for our lspbuf.
       lspBuf = {
