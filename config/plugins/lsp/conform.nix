@@ -40,6 +40,10 @@
         };
         black = {
           command = lib.getExe pkgs.black;
+          prepend_args = [
+            "--preview"
+            "--enable-unstable-feature" "string_processing"
+          ];
         };
       };
 
