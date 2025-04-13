@@ -37,6 +37,7 @@
     ./plugins/utils/render-markdown.nix
     ./plugins/utils/telescope.nix
     ./plugins/utils/todo-comments.nix
+    ./plugins/utils/vimtex.nix
     ./plugins/utils/whichkey.nix
   ];
 }

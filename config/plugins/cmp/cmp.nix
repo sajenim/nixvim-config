@@ -23,6 +23,10 @@
         { # Markdown
           name = "render_markdown";
         }
+
+        { # VimTex
+          name = "vimtex";
+        }
       ];
 
       # Key mappings for the completion menu.
