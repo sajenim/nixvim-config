@@ -13,25 +13,7 @@
         desc = "+search";
       };
     }
-
-    {
-      mode = "n";
-      key = "<leader>h";
-      action = "<Nop>";
-      options = {
-        desc = "+hunks";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader>t";
-      action = "<Nop>";
-      options = {
-        desc = "+toggle";
-      };
-    }
-
+ 
     {
       mode = "n";
       key = "<leader>b";
@@ -61,10 +43,19 @@
 
     {
       mode = "n";
-      key = "<leader>l";
+      key = "<leader>gl";
       action = "<Nop>";
       options = {
         desc = "+list";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>gt";
+      action = "<Nop>";
+      options = {
+        desc = "+toggle";
       };
     }
   ];

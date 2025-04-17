@@ -63,7 +63,7 @@
         end
       '';
       options = {
-        desc = "Format buffer";
+        desc = "format_buffer";
       };
     }
   ];

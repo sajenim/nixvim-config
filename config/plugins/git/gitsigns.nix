@@ -6,7 +6,7 @@
   keymaps = [
     {
       mode = ["n" "v"];
-      key = "<leader>hs";
+      key = "<leader>gs";
       action = "<cmd>Gitsigns stage_hunk<cr>";
       options = {
         silent = true;
@@ -16,7 +16,7 @@
 
     {
       mode = ["n" "v"];
-      key = "<leader>hr";
+      key = "<leader>gr";
       action = "<cmd>Gitsigns reset_hunk<cr>";
       options = {
         silent = true;
@@ -26,7 +26,7 @@
 
     {
       mode = "n";
-      key = "<leader>hS";
+      key = "<leader>gS";
       action = "<cmd>Gitsigns stage_buffer<cr>";
       options = {
         silent = true;
@@ -36,7 +36,7 @@
 
     {
       mode = "n";
-      key = "<leader>hu";
+      key = "<leader>gu";
       action = "<cmd>Gitsigns undo_stage_hunk<cr>";
       options = {
         silent = true;
@@ -46,7 +46,7 @@
 
     {
       mode = "n";
-      key = "<leader>hR";
+      key = "<leader>gR";
       action = "<cmd>Gitsigns reset_buffer<cr>";
       options = {
         silent = true;
@@ -56,7 +56,7 @@
 
     {
       mode = "n";
-      key = "<leader>hp";
+      key = "<leader>gp";
       action = "<cmd>Gitsigns preview_hunk_inline<cr>";
       options = {
         silent = true;
@@ -66,7 +66,7 @@
 
     {
       mode = "n";
-      key = "<leader>hb";
+      key = "<leader>gb";
       action = "<cmd>Gitsigns blame<cr>";
       options = {
         silent = true;
@@ -76,7 +76,7 @@
 
     {
       mode = "n";
-      key = "<leader>tb";
+      key = "<leader>gtb";
       action = "<cmd>Gitsigns toggle_current_line_blame<cr>";
       options = {
         silent = true;
@@ -86,7 +86,7 @@
 
     {
       mode = "n";
-      key = "<leader>hd";
+      key = "<leader>gd";
       action = "<cmd>Gitsigns diffthis<cr>";
       options = {
         silent = true;
@@ -96,7 +96,7 @@
 
     {
       mode = "n";
-      key = "<leader>td";
+      key = "<leader>gtd";
       action = "<cmd>Gitsigns toggle_deleted<cr>";
       options = {
         silent = true;

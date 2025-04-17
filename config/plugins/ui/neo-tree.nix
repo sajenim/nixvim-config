@@ -7,9 +7,9 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>\\";
+      key = "<leader>e";
       action = "<cmd>Neotree<cr>";
-      options.desc = "Focus Neotree";
+      options.desc = "focus_neotree";
     }
   ];
 }

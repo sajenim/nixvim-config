@@ -16,31 +16,24 @@
 
     # Configure our telescope keymaps.
     keymaps = {
-      # File Pickers
-      "<leader>sf" = {
-        action = "find_files";
-        options = {
-          desc = "Search project files";
-        };
-      };
       "<leader>/" = {
         action = "live_grep";
         options = {
-          desc = "Grep (root dir)";
-        };
-      };
-
-      # Vim Pickers
-      "<leader>sb" = {
-        action = "buffers";
-        options = {
-          desc = "Search open buffers";
+          desc = "live_grep";
         };
       };
       "<leader>:" = {
         action = "command_history";
         options = {
-          desc = "Command History";
+          desc = "command_history";
+        };
+      };
+
+      # Search
+      "<leader>sb" = {
+        action = "buffers";
+        options = {
+          desc = "Search open buffers";
         };
       };
       "<leader>sc" = {
@@ -49,44 +42,48 @@
           desc = "Search Commands";
         };
       };
-
-      # Git Pickers
-      "<leader>lc" = {
-        action = "git_bcommits";
+      "<leader>sf" = {
+        action = "find_files";
         options = {
-          desc = "List buffers commits";
+          desc = "Search project files";
         };
       };
-      "<leader>lC" = {
+      "<leader>sl" = {
+        action = "software-licenses find";
+        options = {
+          desc = "Search Software Licenses";
+        };
+      };
+
+      # List
+      "<leader>glc" = {
+        action = "git_bcommits";
+        options = {
+          desc = "List git commits";
+        };
+      };
+      "<leader>glC" = {
         action = "git_commits";
         options = {
           desc = "List git commits";
         };
       };
-      "<leader>lb" = {
+      "<leader>glb" = {
         action = "git_branches";
         options = {
           desc = "List git branches";
         };
       };
-      "<leader>ld" = {
+      "<leader>gld" = {
         action = "git_status";
         options = {
           desc = "List git diff";
         };
       };
-      "<leader>ls" = {
+      "<leader>gls" = {
         action = "git_stash";
         options = {
           desc = "List git stash";
-        };
-      };
-
-      # Extensions
-      "<leader>sl" = {
-        action = "software-licenses find";
-        options = {
-          desc = "Search Software Licenses";
         };
       };
     };
