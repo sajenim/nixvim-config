@@ -9,7 +9,6 @@
 
     # Completion
     ./plugins/cmp/cmp.nix
-    ./plugins/cmp/copilot.nix
 
     # Editor plugins and configurations
     ./plugins/editor/autopairs.nix
