@@ -77,8 +77,9 @@
     { # delete buffer
       mode = ["n"];
       key = "<leader>bd";
-      action = ":bdelete<cr>";
+      action = ":b#<bar>bd#<cr>";
       options = {
+        desc = ":bdelete";
         silent = true;
       };
     }
