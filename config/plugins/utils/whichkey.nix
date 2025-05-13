@@ -15,15 +15,6 @@
     }
  
     {
-      mode = "n";
-      key = "<leader>b";
-      action = "<Nop>";
-      options = {
-        desc = "+buffer";
-      };
-    }
-
-    {
       mode = ["n" "v"];
       key = "<leader>c";
       action = "<Nop>";

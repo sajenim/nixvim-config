@@ -11,7 +11,6 @@
     ./plugins/cmp/cmp.nix
 
     # Editor plugins and configurations
-    ./plugins/editor/bufdelete.nix
     ./plugins/editor/comment.nix
     ./plugins/editor/treesitter.nix
 
