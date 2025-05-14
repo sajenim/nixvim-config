@@ -18,6 +18,7 @@
     ./plugins/ui/lualine.nix
     ./plugins/ui/neo-tree.nix
     ./plugins/ui/web-devicons.nix
+    ./plugins/ui/whichkey.nix
 
     # LSP and formatting
     ./plugins/lsp/conform.nix
@@ -34,6 +35,5 @@
     ./plugins/utils/telescope.nix
     ./plugins/utils/todo-comments.nix
     ./plugins/utils/vimtex.nix
-    ./plugins/utils/whichkey.nix
   ];
 }
