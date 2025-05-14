@@ -1,8 +1,4 @@
 {...}: {
-  imports = [
-    ./software-licenses.nix # View common software licenses.
-  ];
-
   plugins.telescope = {
     enable = true;
 
@@ -46,12 +42,6 @@
         action = "find_files";
         options = {
           desc = "Search project files";
-        };
-      };
-      "<leader>sl" = {
-        action = "software-licenses find";
-        options = {
-          desc = "Search Software Licenses";
         };
       };
 
