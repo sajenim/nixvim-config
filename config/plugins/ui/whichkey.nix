@@ -18,15 +18,6 @@
     }
  
     {
-      mode = ["n" "v"];
-      key = "<leader>c";
-      action = "<Nop>";
-      options = {
-        desc = "+comment";
-      };
-    }
-
-    {
       mode = "n";
       key = "<leader>g";
       action = "<Nop>";
