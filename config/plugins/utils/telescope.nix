@@ -10,6 +10,18 @@
       };
     };
 
+    # Configure telescope settings.
+    settings = {
+      defaults = {
+        layout_strategy = "horizontal";
+        # Reduce height / width of picker 
+        layout_config = {
+          height = 0.8;
+          width = 0.8;
+        };
+      };
+    };
+
     # Configure our telescope keymaps.
     keymaps = {
       # Find
