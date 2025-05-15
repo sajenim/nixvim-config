@@ -1,6 +1,13 @@
 {...}: {
   plugins.neo-tree = {
     enable = true;
+    eventHandlers = {
+      neo_tree_window_after_open = ''
+        function(_)
+          vim.cmd("wincmd =")
+        end
+      '';
+    };
     closeIfLastWindow = true;
   };
 
