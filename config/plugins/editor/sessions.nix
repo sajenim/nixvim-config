@@ -1,10 +1,6 @@
 { ... }: {
   plugins.auto-session = {
     enable = true;
-    settings = {
-      pre_save_cmds = ["Neotree close"];
-      post_restore_cmds = ["Neotree show"];
-    };
   };
 
   keymaps = [

@@ -18,7 +18,6 @@
 
     # UI plugins
     ./plugins/ui/lualine.nix
-    ./plugins/ui/neo-tree.nix
     ./plugins/ui/web-devicons.nix
     ./plugins/ui/whichkey.nix
 
@@ -34,6 +33,7 @@
     # Utils
     ./plugins/utils/markdown-preview.nix
     ./plugins/utils/render-markdown.nix
+    ./plugins/utils/oil.nix
     ./plugins/utils/telescope.nix
     ./plugins/utils/todo-comments.nix
     ./plugins/utils/vimtex.nix
