@@ -12,47 +12,40 @@
 
     # Configure our telescope keymaps.
     keymaps = {
-      "<leader>/" = {
-        action = "live_grep";
-        options = {
-          desc = "live_grep";
-        };
-      };
-      "<leader>:" = {
-        action = "command_history";
-        options = {
-          desc = "command_history";
-        };
-      };
-
-      # Search
-      "<leader>sb" = {
-        action = "buffers";
-        options = {
-          desc = "Search open buffers";
-        };
-      };
-      "<leader>sc" = {
-        action = "commands";
-        options = {
-          desc = "Search Commands";
-        };
-      };
-      "<leader>sf" = {
+      # Find
+      "<leader>ff" = {
         action = "find_files";
         options = {
-          desc = "Search project files";
+          desc = "Find project files";
+        };
+      };
+      "<leader>fg" = {
+        action = "live_grep";
+        options = {
+          desc = "Find pattern";
+        };
+      };
+      "<leader>fb" = {
+        action = "buffers";
+        options = {
+          desc = "Find open buffers";
+        };
+      };
+      "<leader>fh" = {
+        action = "help_tags";
+        options = {
+          desc = "Find help tags";
+        };
+      };
+      "<leader>fc" = {
+        action = "commands";
+        options = {
+          desc = "Find commands";
         };
       };
 
-      # List
+      # Git List
       "<leader>glc" = {
-        action = "git_bcommits";
-        options = {
-          desc = "List git commits";
-        };
-      };
-      "<leader>glC" = {
         action = "git_commits";
         options = {
           desc = "List git commits";

@@ -6,10 +6,10 @@
   keymaps = [
     {
       mode = ["n"];
-      key = "<leader>ss";
+      key = "<leader>fs";
       action = ":SessionSearch<cr>";
       options = {
-        desc = "Search sessions";
+        desc = "Find sessions";
         silent = true;
       };
     }

@@ -11,6 +11,15 @@
       };
     }
 
+    { # prefix: find
+      mode = ["n"];
+      key = "<leader>f";
+      action = "<NOP>";
+      options = {
+        desc = "+find"; 
+      };
+    }
+
     { # focus window left
       mode = ["n"];
       key = "<C-Left>";

@@ -56,14 +56,14 @@
   keymaps = [
     {
       mode = "";
-      key = "<leader>f";
+      key = "<leader>F";
       action.__raw = ''
         function()
           require('conform').format { async = true, lsp_fallback = true }
         end
       '';
       options = {
-        desc = "format_buffer";
+        desc = "Format buffer";
       };
     }
   ];
