@@ -10,6 +10,12 @@
     # Completion
     ./plugins/cmp/cmp.nix
 
+    # Debug Adapter Protocol
+    ./plugins/dap/dap.nix
+    ./plugins/dap/dap-ui.nix
+    ./plugins/dap/dap-virtual-text.nix
+    ./plugins/dap/dap-python.nix
+
     # Editor plugins and configurations
     ./plugins/editor/buffers.nix
     ./plugins/editor/comment.nix
