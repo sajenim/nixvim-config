@@ -6,7 +6,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>g<cr>";
+      key = "<leader>gL";
       action = "<cmd>LazyGit<cr>";
       options = {
         desc = "Open LazyGit";
@@ -16,7 +16,9 @@
     {
       mode = "n";
       key = "<leader>glr";
-      action = "<cmd>lua require(\"telescope\").extensions.lazygit.lazygit()<cr>";
+      action = {
+        __raw = "require('telescope').extensions.lazygit.lazygit";
+      };
       options = {
         desc = "List repositories";
       };

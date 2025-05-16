@@ -28,6 +28,15 @@
   keymaps = [
     {
       mode = ["n"];
+      key = "<leader>n";
+      action = "<cmd>NvimTreeToggle<cr>";
+      options = { 
+        desc = "Toggle NvimTree";
+      };
+    }
+
+    {
+      mode = ["n"];
       key = "<leader>e";
       action = "<cmd>NvimTreeFocus<cr>";
       options = {

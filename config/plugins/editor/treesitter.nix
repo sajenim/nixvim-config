@@ -19,25 +19,23 @@
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.allGrammars;
   };
 
+  # Refactor modules for nvim-treesitter
   plugins.treesitter-refactor = {
     enable = true;
 
+    # Highlights definitions and usages.
     highlightDefinitions = {
       enable = true;
     };
 
+    # Provides "go to usage"
     navigation = {
       enable = true;
-      keymaps = {
-        gotoNextUsage = "<leader>n";
-        gotoPreviousUsage = "<leader>N";
-      };
-    };
 
-    smartRename = {
-      enable = true;
+      # Go to the next / previous usage.
       keymaps = {
-        smartRename = "<leader>r";
+        gotoNextUsage = "]u";
+        gotoPreviousUsage = "[u";
       };
     };
   };

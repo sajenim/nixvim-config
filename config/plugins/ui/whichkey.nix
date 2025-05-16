@@ -9,16 +9,7 @@
   # Prefixes, No operation.
   keymaps = [
     {
-      mode = "n";
-      key = "<leader>s";
-      action = "<Nop>";
-      options = {
-        desc = "+search";
-      };
-    }
- 
-    {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<leader>g";
       action = "<Nop>";
       options = {
@@ -27,7 +18,7 @@
     }
 
     {
-      mode = "n";
+      mode = ["n"];
       key = "<leader>gl";
       action = "<Nop>";
       options = {
@@ -36,7 +27,7 @@
     }
 
     {
-      mode = "n";
+      mode = ["n"];
       key = "<leader>gt";
       action = "<Nop>";
       options = {

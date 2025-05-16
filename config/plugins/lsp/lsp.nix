@@ -1,6 +1,7 @@
 {...}: {
   plugins.lsp = {
     enable = true; # Enable neovim's built-in LSP.
+    inlayHints = true;
 
     # Configure our language servers
     servers = {
@@ -53,7 +54,66 @@
         gi = "implementation"; # Lists all the implementations¹
         gt = "type_definition"; # Jumps to the definition of the type¹
         # ¹ for the symbol under the cursor
+
+        # Renames all references to the symbol under the cursor. 
+        "<leader>r" = {
+          action = "rename";
+          desc = "Rename";
+        };
       };
+
+      # Extra keymaps to register when an LSP is attached
+      extra = [
+        {
+          mode = ["n"];
+          key = "<leader>l";
+          action = "<NOP>";
+          options = {
+            silent = true;
+            desc = "+lsp";
+          };
+        }
+
+        {
+          mode = ["n"];
+          key = "<leader>lc";
+          action = "<cmd>LspStop<cr>";
+          options = {
+            silent = true;
+            desc = "Stop server";
+          };
+        }
+
+        {
+          mode = ["n"];
+          key = "<leader>ls";
+          action = "<cmd>LspStart<cr>";
+          options = {
+            silent = true;
+            desc = "Start server";
+          };
+        }
+
+        {
+          mode = ["n"];
+          key = "<leader>lr";
+          action = "<cmd>LspRestart<cr>";
+          options = {
+            desc = "Restart server";
+          };
+        }
+
+        {
+          mode = ["n"];
+          key = "<leader>fd";
+          action = {
+            __raw = "require('telescope.builtin').lsp_definitions";
+          };
+          options = {
+            desc = "Find definitions";
+          };
+        }
+      ];
     };
   };
 }

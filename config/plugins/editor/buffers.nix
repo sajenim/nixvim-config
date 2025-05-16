@@ -17,7 +17,7 @@
     {
       # goto next buffer
       mode = ["n"];
-      key = "<leader>bn";
+      key = "]b";
       action = ":bnext<cr>";
       options = {
         silent = true;
@@ -27,7 +27,7 @@
     {
       # goto previous buffer
       mode = ["n"];
-      key = "<leader>bp";
+      key = "[b";
       action = ":bprevious<cr>";
       options = {
         silent = true;

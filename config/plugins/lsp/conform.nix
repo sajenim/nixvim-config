@@ -55,7 +55,7 @@
   # Keymaps for conform.nvim
   keymaps = [
     {
-      mode = "";
+      mode = ["n"];
       key = "<leader>F";
       action.__raw = ''
         function()
