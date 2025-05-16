@@ -5,6 +5,7 @@
 
   keymaps = [
     {
+      mode = ["n"];
       key = "<leader>du";
       action = {
         __raw = "require('dapui').toggle";

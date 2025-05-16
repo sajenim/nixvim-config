@@ -18,7 +18,7 @@
 
     # Session management:
     {
-      mode = ["n" "v"];
+      mode = ["n"];
       key = "<leader>dc";
       action = "<cmd>DapContinue<cr>";
       options = {
@@ -28,7 +28,7 @@
 
     {
       mode = ["n"];
-      key = "<leader>dd";
+      key = "<leader>dq";
       action = "<cmd>DapDisconnect<cr>";
       options = {
         silent = true;
@@ -46,7 +46,7 @@
 
     {
       mode = ["n"];
-      key = "<leader>dt";
+      key = "<leader>dQ";
       action = "<cmd>DapTerminate<cr>";
       options = {
         silent = true;
