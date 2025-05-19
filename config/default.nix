@@ -20,6 +20,7 @@
     ./plugins/editor/buffers.nix
     ./plugins/editor/comment.nix
     ./plugins/editor/sessions.nix
+    ./plugins/editor/smart-splits.nix
     ./plugins/editor/treesitter.nix
 
     # UI plugins
