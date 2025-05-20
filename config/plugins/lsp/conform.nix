@@ -22,6 +22,9 @@
           "isort"
           "black"
         ];
+        rust = [
+          "rustfmt"
+        ];
       };
 
       # Install our formatters
@@ -44,6 +47,9 @@
             "--preview"
             "--enable-unstable-feature" "string_processing"
           ];
+        };
+        rustfmt = {
+          command = lib.getExe pkgs.rustfmt;
         };
       };
 

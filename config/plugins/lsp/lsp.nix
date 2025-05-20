@@ -34,6 +34,13 @@
       pyright = {
         enable = true;
       };
+      # Rust
+      rust_analyzer = {
+        enable = true;
+        # dependencies
+        installCargo = true;
+        installRustc = true;
+      };
     };
 
     keymaps = {
