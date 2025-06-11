@@ -4,19 +4,18 @@
 
     settings = {
       toggler = {
-        line = "<leader>cl<Return>";
-        block = "<leader>cb<Return>";
+        line = "<leader>/n";
       };
 
       opleader = {
-        line = "<leader>cl";
-        block = "<leader>cb";
+        line = "<leader>/l";
+        block = "<leader>/b";
       };
 
       extra = {
-        above = "<leader>c<Up>";
-        below = "<leader>c<Down>";
-        eol = "<leader>c<End>";
+        above = "<leader>/o";
+        below = "<leader>/e";
+        eol = "<leader>/i";
       };
 
       mappings = {
@@ -27,9 +26,9 @@
   };
 
   keymaps = [
-    { # prefix: comment
+    { 
       mode = ["n" "v"];
-      key = "<leader>c";
+      key = "<leader>/";
       action = "<Nop>";
       options = {
         desc = "+comment";
