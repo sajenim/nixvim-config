@@ -9,6 +9,7 @@
     conceallevel = 1;
     updatetime=100;
     undofile = true;
+    splitright = true;
 
     # Tabs & Spaces
     tabstop = 2;

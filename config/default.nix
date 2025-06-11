@@ -9,6 +9,7 @@
 
     # Completion
     ./plugins/cmp/cmp.nix
+    ./plugins/cmp/copilot.nix
 
     # Debug Adapter Protocol
     ./plugins/dap/dap.nix
@@ -39,6 +40,7 @@
     ./plugins/git/lazygit.nix
 
     # Utils
+    ./plugins/utils/copilot-chat.nix
     ./plugins/utils/markdown-preview.nix
     ./plugins/utils/render-markdown.nix
     ./plugins/utils/oil.nix

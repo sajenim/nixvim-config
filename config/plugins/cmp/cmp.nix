@@ -40,7 +40,7 @@
         "<Up>" =
           # Lua
           "cmp.mapping(cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Select}), {'i', 's'})";
-        "<Tab>" =
+        "<cr>" =
           # Lua
           "cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Replace })";
       };

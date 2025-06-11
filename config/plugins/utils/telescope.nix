@@ -8,6 +8,10 @@
       fzf-native = {
         enable = true;
       };
+      # Enable telescope UI select.
+      ui-select = {
+        enable = true;
+      };
     };
 
     # Configure telescope settings.
