@@ -20,6 +20,7 @@
     # Editor plugins and configurations
     ./plugins/editor/buffers.nix
     ./plugins/editor/commentary.nix
+    ./plugins/editor/mini.nix
     ./plugins/editor/sessions.nix
     ./plugins/editor/smart-splits.nix
     ./plugins/editor/surround.nix
