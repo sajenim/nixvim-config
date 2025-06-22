@@ -19,9 +19,10 @@
 
     # Editor plugins and configurations
     ./plugins/editor/buffers.nix
-    ./plugins/editor/comment.nix
+    ./plugins/editor/commentary.nix
     ./plugins/editor/sessions.nix
     ./plugins/editor/smart-splits.nix
+    ./plugins/editor/surround.nix
     ./plugins/editor/treesitter.nix
 
     # UI plugins
