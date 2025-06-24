@@ -63,25 +63,5 @@
         desc = "View Blame";
       };
     }
-
-    {
-      mode = ["n"];
-      key = "[h";
-      action = "<cmd>Gitsigns prev_hunk<cr>";
-      options = {
-        silent = true;
-        desc = "Goto Previous Hunk";
-      };
-    }
-
-    {
-      mode = ["n"];
-      key = "]h";
-      action = "<cmd>Gitsigns next_hunk<cr>";
-      options = {
-        silent = true;
-        desc = "Goto Next Hunk";
-      };
-    }
   ];
 }
