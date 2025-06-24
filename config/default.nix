@@ -39,7 +39,6 @@
     # Git
     ./plugins/git/fugitive.nix
     ./plugins/git/gitsigns.nix
-    ./plugins/git/lazygit.nix
 
     # Utils
     ./plugins/utils/copilot-chat.nix
