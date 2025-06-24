@@ -25,14 +25,5 @@
         desc = "+list";
       };
     }
-
-    {
-      mode = ["n"];
-      key = "<leader>gt";
-      action = "<Nop>";
-      options = {
-        desc = "+toggle";
-      };
-    }
   ];
 }
