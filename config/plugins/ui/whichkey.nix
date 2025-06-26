@@ -3,6 +3,9 @@
     enable = true;
     settings = {
       preset = "modern";
+      icons = {
+        mappings = false;
+      };
     };
   };
 

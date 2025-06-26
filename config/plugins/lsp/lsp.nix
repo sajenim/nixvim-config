@@ -49,8 +49,6 @@
       # Configure keymaps for our diagnostics.
       diagnostic = {
         "<C-W>d" = "open_float"; # Show diagnostics in floating window.
-        "[d" = "goto_prev"; # Jump to previous diagnostic.
-        "]d" = "goto_next"; # Jump to next diagnostic.
       };
       # Configure keymaps for our lspbuf.
       lspBuf = {
@@ -65,7 +63,7 @@
         # Renames all references to the symbol under the cursor. 
         "<leader>r" = {
           action = "rename";
-          desc = "Rename";
+          desc = "Rename reference";
         };
       };
 

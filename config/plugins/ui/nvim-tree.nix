@@ -31,7 +31,7 @@
       key = "<leader>n";
       action = "<cmd>NvimTreeToggle<cr>";
       options = { 
-        desc = "Toggle NvimTree";
+        desc = "Toggle file explorer";
       };
     }
 
@@ -40,7 +40,7 @@
       key = "<leader>e";
       action = "<cmd>NvimTreeFocus<cr>";
       options = {
-        desc = "Focus NvimTree";
+        desc = "Focus file explorer";
       };
     }
   ];
