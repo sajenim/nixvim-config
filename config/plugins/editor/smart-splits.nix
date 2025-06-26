@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      multiplexer_integration = "WezTerm";
+      multiplexer_integration = "wezterm";
     };
   };
 
