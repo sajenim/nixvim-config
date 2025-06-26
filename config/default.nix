@@ -46,6 +46,7 @@
 
     # Markdown, Notes & Productivity
     ./plugins/notes/markdown-preview.nix
+    ./plugins/notes/neorg.nix
     ./plugins/notes/render-markdown.nix
     ./plugins/notes/todo-comments.nix
 

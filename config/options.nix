@@ -6,7 +6,6 @@
     showmode = false;
     swapfile = false;
     clipboard = "unnamedplus";
-    conceallevel = 1;
     updatetime=100;
     undofile = true;
     splitright = true;
@@ -16,6 +15,10 @@
     softtabstop = 2;
     shiftwidth = 2;
     expandtab = true;
+
+    # Required for neorg
+    conceallevel = 2;
+    foldlevel = 99;
 
     # Using this config for sessionoptions is recommended:
     sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions";
