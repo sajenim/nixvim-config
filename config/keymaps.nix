@@ -1,5 +1,8 @@
 {...}: {
   globals.mapleader = " ";
+  globals.maplocalleader = {
+    __raw = "vim.api.nvim_replace_termcodes('<BS>', false, false, true)";
+  };
 
   keymaps = [
     {
