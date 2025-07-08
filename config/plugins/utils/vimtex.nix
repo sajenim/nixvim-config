@@ -8,4 +8,9 @@
       view_method = "zathura";
     };
   };
+
+  # Additional packages for VimTeX
+  extraPlugins = [
+    pkgs.texlivePackages.enumitem
+  ];
 }
