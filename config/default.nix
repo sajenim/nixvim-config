@@ -13,8 +13,6 @@
 
     # Completion & AI Assistancee
     ./plugins/cmp/cmp.nix
-    ./plugins/cmp/copilot.nix
-    ./plugins/cmp/copilot-chat.nix
 
     # Debugging (DAP)
     ./plugins/dap/dap.nix
