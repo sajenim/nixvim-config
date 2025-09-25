@@ -11,14 +11,12 @@
     ./plugins/collections/mini.nix
     ./plugins/collections/snacks.nix
 
+    # LSP and Formatting
+    ./plugins/lsp/conform.nix
+    ./plugins/lsp/lsp.nix
+
     # Completion & AI Assistancee
     ./plugins/cmp/cmp.nix
-
-    # Debugging (DAP)
-    ./plugins/dap/dap.nix
-    ./plugins/dap/dap-ui.nix
-    ./plugins/dap/dap-virtual-text.nix
-    ./plugins/dap/dap-python.nix
 
     # Editor Enhancements
     ./plugins/editor/commentary.nix
@@ -33,10 +31,6 @@
     ./plugins/ui/nvim-tree.nix
     ./plugins/ui/web-devicons.nix
     ./plugins/ui/whichkey.nix
-
-    # LSP and Formatting
-    ./plugins/lsp/conform.nix
-    ./plugins/lsp/lsp.nix
 
     # Git Integration
     ./plugins/git/fugitive.nix
