@@ -3,7 +3,7 @@
     enable = true;
 
     # Configure nvim-tree
-    extraOptions = {
+    settings = {
       # Set width of nvim-tree
       view = {
         width = 38;
