@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     # General Configuration
+    ./autocmds.nix
     ./keymaps.nix
     ./options.nix
 
