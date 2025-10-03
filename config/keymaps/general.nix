@@ -16,15 +16,6 @@
 
     {
       mode = ["n"];
-      key = "<leader>f";
-      action = "<NOP>";
-      options = {
-        desc = "+find"; 
-      };
-    }
-
-    {
-      mode = ["n"];
       key = "<PageUp>";
       action = "<C-u>";
       options = {

@@ -2,8 +2,14 @@
   imports = [
     # General Configuration
     ./autocmds.nix
-    ./keymaps.nix
     ./options.nix
+
+    # Keymaps
+    ./keymaps/general.nix
+    ./keymaps/buffers.nix
+    ./keymaps/windows.nix
+    ./keymaps/find.nix
+    ./keymaps/git.nix
 
     # Themes & Appearance
     ./plugins/themes/default.nix
@@ -22,8 +28,8 @@
     # Editor Enhancements
     ./plugins/editor/commentary.nix
     ./plugins/editor/harpoon.nix
+    ./plugins/editor/maximize.nix
     ./plugins/editor/sessions.nix
-    ./plugins/editor/smart-splits.nix
     ./plugins/editor/surround.nix
     ./plugins/editor/treesitter.nix
 
